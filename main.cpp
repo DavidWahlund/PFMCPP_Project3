@@ -204,53 +204,50 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) Airplane
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) model name
+    2) number of seats
+    3) max speed
+    4) fuelCapacity
+    5) manufacturer
 3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 2)
+    1) take off
+    2) land
+    3) cruise
+Thing 2) Robot
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 3)
+    1) model name
+    2) weight
+    3) battery capacity
+    4) power consumption
+    5) number of actuators
+3 things it can do
+    3) perform tasks
+    2) move
+    3) process sensor data
+Thing 3) Amplifier
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) model name    
+    2) powerInWatts
+    3) numberOfChannels
+    4) distortion
+    5) gain
 3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 4)
+    1) turn on
+    2) adjust distortion
+    3) blow the roof off
+Thing 4) Artificial Intelligence
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) algorithm type
+    2) learning rate
+    3) number of layers in the neural network
+    4) amount of training data
+    5) accuracy on test data
 3 things it can do:
-    1)
-    2)
-    3)
+    1) predict outcomes
+    2) classify inputs
+    3) learn from data
 */
 
 /*
@@ -992,16 +989,16 @@ Now that you've made changes, make a commit!
 Be sure to make the commit message meaningful.
 */
 } // end namespace Part1E_Step13
-  /*
-  =================
- Part 1e - Step 15: Assignment
- =================
- 7) After you finish defining each type, click the [run] button.
-     Clear up any errors or warnings as best you can.
-     if your code produces a [-Wpadded] warning, add '-Wno-padded' to the .replit
-  file with the other compiler flags (-Weverything -Wno-missing-prototypes etc
-  etc)
-  */
+/*
+=================
+Part 1e - Step 15: Assignment
+=================
+7) After you finish defining each type, click the [run] button.
+   Clear up any errors or warnings as best you can.
+   if your code produces a [-Wpadded] warning, add '-Wno-padded' to the .replit
+file with the other compiler flags (-Weverything -Wno-missing-prototypes etc
+etc)
+*/
 
 /*
 =================
