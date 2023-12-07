@@ -204,50 +204,54 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with
         'int float double bool char std::string'.
 
-Thing 1) Airplane
-5 properties:
-    1) model name
-    2) number of seats
-    3) max speed
-    4) fuelCapacity
-    5) manufacturer
-3 things it can do:
-    1) take off
-    2) land
-    3) cruise
-Thing 2) Robot
-5 properties:
-    1) model name
-    2) weight
-    3) battery capacity
-    4) power consumption
-    5) number of actuators
-3 things it can do
-    3) perform tasks
-    2) move
-    3) process sensor data
-Thing 3) Amplifier
-5 properties:
-    1) model name    
-    2) powerInWatts
-    3) numberOfChannels
-    4) distortion
-    5) gain
-3 things it can do:
-    1) turn on
-    2) adjust distortion
-    3) blow the roof off
-Thing 4) Artificial Intelligence
-5 properties:
-    1) algorithm type
-    2) learning rate
-    3) number of layers in the neural network
-    4) amount of training data
-    5) accuracy on test data
-3 things it can do:
-    1) predict outcomes
-    2) classify inputs
-    3) learn from past inputs
+    Thing 1: Airplane
+    5 properties:
+        1) model name
+        2) number of seats
+        3) max speed
+        4) fuel type
+        5) manufacturer
+    3 things it can do:
+        1) take off
+        2) land
+        3) cruise
+    
+    Thing 2: Robot
+    5 properties:
+        1) model name
+        2) weight
+        3) battery type
+        4) power consumption
+        5) number of actuators
+    3 things it can do:
+        1) perform tasks
+        2) move
+        3) process sensor data
+    
+    Thing 3: Amplifier
+    5 properties:
+        1) model name
+        2) power in watts
+        3) number of channels
+        4) distortion
+        5) gain
+    3 things it can do:
+        1) turn on
+        2) adjust distortion
+        3) blow the roof off
+    
+    Thing 4: Artificial Intelligence
+    5 properties:
+        1) algorithm type
+        2) learning rate
+        3) number of layers in the neural network
+        4) amount of training data
+        5) accuracy on test data
+    3 things it can do:
+        1) predict outcomes
+        2) classify inputs
+        3) learn from past inputs
+
 */
 
 /*
@@ -326,6 +330,54 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
+
+    Thing 1: Airplane
+    5 properties:
+        1) model name (std::string)
+        2) number of seats (int)
+        3) max speed (float)
+        4) fuel type (char)
+        5) manufacturer (std::string)
+    3 things it can do:
+        1) take off
+        2) land
+        3) cruise
+    
+    Thing 2: Robot
+    5 properties:
+        1) model name (std::string)
+        2) weight (double)
+        3) battery type (char)
+        4) power consumption (float)
+        5) number of actuators (int)
+    3 things it can do:
+        1) perform tasks
+        2) move
+        3) process sensor data
+    
+    Thing 3: Amplifier
+    5 properties:
+        1) model name (std::string)
+        2) power in watts (float)
+        3) number of channels (int)
+        4) distortion (double)
+        5) gain (float)
+    3 things it can do:
+        1) turn on
+        2) adjust distortion
+        3) blow the roof off
+    
+    Thing 4: Artificial Intelligence
+    5 properties:
+        1) algorithm type (std::string)
+        2) learning rate (double)
+        3) number of layers in the neural network (int)
+        4) amount of training data (int)
+        5) accuracy on test data (float)
+    3 things it can do:
+        1) predict outcomes
+        2) classify inputs
+        3) learn from past inputs
 */
 
 /*
