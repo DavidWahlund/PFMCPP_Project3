@@ -247,7 +247,7 @@ Thing 4) Artificial Intelligence
 3 things it can do:
     1) predict outcomes
     2) classify inputs
-    3) learn from past inputs
+    3) learn from data
 */
 
 /*
