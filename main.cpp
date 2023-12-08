@@ -77,6 +77,7 @@ Part 1a - Step 2: Assignment
     - A few blanks are filled in for you already.
 
     Fill in the remaining blanks below which describe this car interior in terms of sub-objects.
+    
 
 Main Object: Car Interior
     Sub Object: Steering Wheel
