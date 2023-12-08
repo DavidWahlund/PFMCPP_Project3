@@ -381,17 +381,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will
 be their own UDTs you'll define these 5 sub-objects in Part 1d.
 
-Thing 10: City
+Thing 10)
 5 properties:
-    1) airport
-    2) building
-    3) town hall
-    4) factory
-    5) hospital
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) housing peoples
-    2) transportation
-    3) help injured people
+    1)
+    2)
+    3)
  */
 
 /*
