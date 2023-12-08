@@ -481,66 +481,66 @@ example:
 object in plain English. Remember to pick properties that can be represented
 with 'int float double bool char std::string'.
 
-Thing 5: Airport
+Thing 5)
 5 properties:
-    1) name
-    2) location
-    3) number of runways
-    4) number of terminals
-    5) number of flights per day
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) receive airplanes
-    2) dispatch airplanes
-    3) manage air traffic
+    1)
+    2)
+    3)
 
-Thing 6: Factory
+Thing 6)
 5 properties:
-    1) name
-    2) location
-    3) number of workers
-    4) number of products produced per day
-    5) operating cost per day
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) manufacture products
-    2) repair machinery
-    3) ship products
+    1)
+    2)
+    3)
 
-Thing 7: Concert
+Thing 7)
 5 properties:
-    1) name
-    2) location
-    3) number of attendees
-    4) duration
-    5) ticket price
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) start concert
-    2) end concert
-    3) entertain attendees
+    1)
+    2)
+    3)
 
-Thing 8: Data Center
+Thing 8)
 5 properties:
-    1) name
-    2) location
-    3) number of servers
-    4) power consumption per day
-    5) data storage capacity
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) process data
-    2) store data
-    3) cool servers
+    1)
+    2)
+    3)
 
-Thing 9: Vehicle
+Thing 9)
 5 properties:
-    1) model name
-    2) number of seats
-    3) max speed
-    4) fuel type
-    5) manufacturer
+    1)
+    2)
+    3)
+    4)
+    5)
 3 things it can do:
-    1) start engine
-    2) stop engine
-    3) transport passengers
-*/
+    1)
+    2)
+    3)
+ */
 
 /*
 =================
@@ -567,66 +567,6 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
-
-Thing 5: Airport
-5 properties:
-    1) name (std::string)
-    2) location (std::string)
-    3) number of runways (int)
-    4) number of terminals (int)
-    5) number of flights per day (int)
-3 things it can do:
-    1) receive airplanes
-    2) dispatch airplanes
-    3) manage air traffic
-
-Thing 6: Factory
-5 properties:
-    1) name (std::string)
-    2) location (std::string)
-    3) number of workers (int)
-    4) number of products produced per day (int)
-    5) operating cost per day (double)
-3 things it can do:
-    1) manufacture products
-    2) repair machinery
-    3) ship products
-
-Thing 7: Concert
-5 properties:
-    1) name (std::string)
-    2) location (std::string)
-    3) number of attendees (int)
-    4) duration (float)
-    5) ticket price (double)
-3 things it can do:
-    1) start concert
-    2) end concert
-    3) entertain attendees
-
-Thing 8: Data Center
-5 properties:
-    1) name (std::string)
-    2) location (std::string)
-    3) number of servers (int)
-    4) power consumption per day (double)
-    5) data storage capacity (double)
-3 things it can do:
-    1) process data
-    2) store data
-    3) cool servers
-
-Thing 9: Vehicle
-5 properties:
-    1) model name (std::string)
-    2) number of seats (int)
-    3) max speed (float)
-    4) fuel type (char)
-    5) manufacturer (std::string)
-3 things it can do:
-    1) start engine
-    2) stop engine
-    3) transport passengers
 */
 
 /*
