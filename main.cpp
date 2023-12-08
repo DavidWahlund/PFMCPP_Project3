@@ -197,53 +197,7 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1: Airplane
-5 properties:
-    1) model name
-    2) number of seats
-    3) max speed
-    4) fuel type
-    5) manufacturer
-3 things it can do:
-    1) take off
-    2) land
-    3) cruise
 
-Thing 2: Robot
-5 properties:
-    1) model name
-    2) weight
-    3) battery type
-    4) power consumption
-    5) number of actuators
-3 things it can do:
-    1) perform tasks
-    2) move
-    3) process sensor data
-
-Thing 3: Amplifier
-5 properties:
-    1) model name
-    2) power in watts
-    3) number of channels
-    4) distortion
-    5) gain
-3 things it can do:
-    1) turn on
-    2) adjust distortion
-    3) blow the roof off
-
-Thing 4: Artificial Intelligence
-5 properties:
-    1) algorithm type
-    2) learning rate
-    3) number of layers in the neural network
-    4) amount of training data
-    5) accuracy on test data
-3 things it can do:
-    1) predict outcomes
-    2) classify inputs
-    3) learn from past inputs
 */
 
 /*
@@ -321,37 +275,7 @@ example:
         brand (std::string)
 
         //Using the same indentation as in part 1b step 2.
-Thing 1: Airplane
-5 properties:
-    1) model name (std::string)
-    2) number of seats (int)
-    3) max speed (float)
-    4) fuel type (char)
-    5) manufacturer (std::string)
 
-Thing 2: Robot
-5 properties:
-    1) model name (std::string)
-    2) weight (double)
-    3) battery type (char)
-    4) power consumption (float)
-    5) number of actuators (int)
-
-Thing 3: Amplifier
-5 properties:
-    1) model name (std::string)
-    2) power in watts (float)
-    3) number of channels (int)
-    4) distortion (double)
-    5) gain (float)
-
-Thing 4: Artificial Intelligence
-5 properties:
-    1) algorithm type (std::string)
-    2) learning rate (double)
-    3) number of layers in the neural network (int)
-    4) amount of training data (int)
-    5) accuracy on test data (float)
 */
 
 /*
@@ -371,17 +295,7 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10: City
-5 properties:
-    1) airport
-    2) building
-    3) town hall
-    4) factory
-    5) hospital
-3 things it can do:
-    1) housing peoples
-    2) transportation
-    3) help injured people
+
  */
 
  /*
@@ -468,65 +382,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+Thing 5: Airport
+  5 properties:
+      1) name
+      2) location
+      3) number of runways
+      4) number of terminals
+      5) number of flights per day
+  3 things it can do:
+      1) receive airplanes
+      2) dispatch airplanes
+      3) manage air traffic
 
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+  Thing 6: Factory
+  5 properties:
+      1) name
+      2) location
+      3) number of workers
+      4) number of products produced per day
+      5) operating cost per day
+  3 things it can do:
+      1) manufacture products
+      2) repair machinery
+      3) ship products
 
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+  Thing 7: Concert
+  5 properties:
+      1) name
+      2) location
+      3) number of attendees
+      4) duration
+      5) ticket price
+  3 things it can do:
+      1) start concert
+      2) end concert
+      3) entertain attendees
 
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+  Thing 8: Data Center
+  5 properties:
+      1) name
+      2) location
+      3) number of servers
+      4) power consumption per day
+      5) data storage capacity
+  3 things it can do:
+      1) process data
+      2) store data
+      3) cool servers
 
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+  Thing 9: Vehicle
+  5 properties:
+      1) model name
+      2) number of seats
+      3) max speed
+      4) fuel type
+      5) manufacturer
+  3 things it can do:
+      1) start engine
+      2) stop engine
+      3) transport passengers
  */
 
 /*
@@ -552,6 +466,12 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
+        
+
+
+
+
+  
 */
 
 /*
@@ -578,12 +498,125 @@ MOVE THEM to the space below this block comment and put them in numerical order
     I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
     simply CUT and PASTE them in the space provided below:
 */
+Thing 1: Airplane
+5 properties:
+    1) model name
+    2) number of seats
+    3) max speed
+    4) fuel type
+    5) manufacturer
+3 things it can do:
+    1) take off
+    2) land
+    3) cruise
 
+Thing 2: Robot
+5 properties:
+    1) model name
+    2) weight
+    3) battery type
+    4) power consumption
+    5) number of actuators
+3 things it can do:
+    1) perform tasks
+    2) move
+    3) process sensor data
 
+Thing 3: Amplifier
+5 properties:
+    1) model name
+    2) power in watts
+    3) number of channels
+    4) distortion
+    5) gain
+3 things it can do:
+    1) turn on
+    2) adjust distortion
+    3) blow the roof off
 
+Thing 4: Artificial Intelligence
+5 properties:
+    1) algorithm type
+    2) learning rate
+    3) number of layers in the neural network
+    4) amount of training data
+    5) accuracy on test data
+3 things it can do:
+    1) predict outcomes
+    2) classify inputs
+    3) learn from past inputs
 
+Thing 5: Airport
+  5 properties:
+      1) name (std::string)
+      2) location (std::string)
+      3) number of runways (int)
+      4) number of terminals (int)
+      5) number of flights per day (int)
+  3 things it can do:
+      1) receive airplanes
+      2) dispatch airplanes
+      3) manage air traffic
 
+ Thing 6: Factory
+ 5 properties:
+     1) name (std::string)
+     2) location (std::string)
+     3) number of workers (int)
+     4) number of products produced per day (int)
+     5) operating cost per day (double)
+ 3 things it can do:
+     1) manufacture products
+     2) repair machinery
+     3) ship products
 
+Thing 7: Concert
+  5 properties:
+      1) name (std::string)
+      2) location (std::string)
+      3) number of attendees (int)
+      4) duration (float)
+      5) ticket price (double)
+  3 things it can do:
+      1) start concert
+      2) end concert
+      3) entertain attendees
+
+  Thing 8: Data Center
+  5 properties:
+      1) name (std::string)
+      2) location (std::string)
+      3) number of servers (int)
+      4) power consumption per day (double)
+      5) data storage capacity (double)
+  3 things it can do:
+      1) process data
+      2) store data
+      3) cool servers
+
+  Thing 9: Vehicle
+  5 properties:
+      1) model name (std::string)
+      2) number of seats (int)
+      3) max speed (float)
+      4) fuel type (char)
+      5) manufacturer (std::string)
+  3 things it can do:
+      1) start engine
+      2) stop engine
+      3) transport passengers
+
+    Thing 10: City
+    5 properties:
+      1) airport
+      2) building
+      3) town hall
+      4) factory
+      5) hospital
+    3 things it can do:
+      1) housing peoples
+      2) transportation
+      3) help injured people
 
 
 /*
