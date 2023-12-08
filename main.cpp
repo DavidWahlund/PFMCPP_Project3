@@ -83,51 +83,51 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) Volume knobs
+            4) Honk horn
         Name 2 actions that the [Sub Object] can do:
             1) adjust cruise control settings.
-            2)
-        
+            2) Adjust volume on the radio
+
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) speedometer
+            2) rpm-meter
+            3) fuel gauge
+            4) clock
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
-    
+            1) show speed
+            2) show rpm
+            3) show fuel gauge
+
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) air pressure sensor
+            2) air temperature sensor
+            3) air humidity sensor
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) show air pressure
+            2) show air temperature
+            3) show air humidity
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) rear camera display
+            2) gps navigation
+            3) radio
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) warn for obstacles
+            2) show the way
+            3) play music
 
-    Sub Object: Seat 
+    Sub Object: Seat
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) seat cushions
+            2) seat heaters
+            3) seat adjustment controls
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) adjust seat cushions
+            2) adjust seat heaters
 */
 
 /*
@@ -196,53 +196,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1: Airplane
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) model name
+    2) number of seats
+    3) max speed
+    4) fuel type
+    5) manufacturer
 3 things it can do:
-    1)
-    2)
-    3)
+    1) take off
+    2) land
+    3) cruise
 
-Thing 2)
+Thing 2: Robot
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) model name
+    2) weight
+    3) battery type
+    4) power consumption
+    5) number of actuators
 3 things it can do:
-    1)
-    2)
-    3)
+    1) perform tasks
+    2) move
+    3) process sensor data
 
-Thing 3)
+Thing 3: Amplifier
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) model name
+    2) power in watts
+    3) number of channels
+    4) distortion
+    5) gain
 3 things it can do:
-    1)
-    2)
-    3)
+    1) turn on
+    2) adjust distortion
+    3) blow the roof off
 
-Thing 4)
+Thing 4: Artificial Intelligence
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) algorithm type
+    2) learning rate
+    3) number of layers in the neural network
+    4) amount of training data
+    5) accuracy on test data
 3 things it can do:
-    1)
-    2)
-    3)
+    1) predict outcomes
+    2) classify inputs
+    3) learn from past inputs
 */
 
 /*
@@ -318,6 +318,39 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
+
+        //Using the same indentation as in part 1b step 2.
+Thing 1: Airplane
+5 properties:
+    1) model name (std::string)
+    2) number of seats (int)
+    3) max speed (float)
+    4) fuel type (char)
+    5) manufacturer (std::string)
+
+Thing 2: Robot
+5 properties:
+    1) model name (std::string)
+    2) weight (double)
+    3) battery type (char)
+    4) power consumption (float)
+    5) number of actuators (int)
+
+Thing 3: Amplifier
+5 properties:
+    1) model name (std::string)
+    2) power in watts (float)
+    3) number of channels (int)
+    4) distortion (double)
+    5) gain (float)
+
+Thing 4: Artificial Intelligence
+5 properties:
+    1) algorithm type (std::string)
+    2) learning rate (double)
+    3) number of layers in the neural network (int)
+    4) amount of training data (int)
+    5) accuracy on test data (float)
 */
 
 /*
@@ -337,17 +370,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
+Thing 10: City
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) airport
+    2) building
+    3) town hall
+    4) factory
+    5) hospital
 3 things it can do:
-    1)
-    2)
-    3)
+    1) housing peoples
+    2) transportation
+    3) help injured people
  */
 
  /*
