@@ -624,11 +624,11 @@ Thing 9: Vehicle
 
 Thing 10: City
 5 properties:
-    1) airport name (std::string)
-    2) factory name (std::string)
-    3) concert name (std::string)
-    4) data center name (std::string)
-    5) vehicle name (std::string)
+    1) airport
+    2) factory
+    3) concert
+    4) data center
+    5) vehicle
 3 things it can do:
     1) entertainment
     2) transportation
