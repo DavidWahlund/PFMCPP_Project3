@@ -1051,7 +1051,7 @@ struct Vehicle
     //    stop engine
     //    transport passengers
 };
-    
+
 struct City
 {
     //5 properties :
