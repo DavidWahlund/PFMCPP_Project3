@@ -908,17 +908,130 @@ the empty struct body.
     - Do this for all 10 UDTs
     */
 
-struct CarWash {
-  // 5 properties:
-  //     - number of vacuum cleaners
-  //     - number of eco-friendly cleaning supplies
-  //     - stores the amount of water used per week.
-  //     - stores amount of profit made per week
-  //     - number of cars serviced per day
-  // 3 things it can do:
-  //     - wash and wax car
-  //     - charge customer
-  //     - detail the car interior
+struct CarWash 
+{
+// 5 properties:
+//     - number of vacuum cleaners
+//     - number of eco-friendly cleaning supplies
+//     - stores the amount of water used per week.
+//     - stores amount of profit made per week
+//     - number of cars serviced per day
+// 3 things it can do:
+//     - wash and wax car
+//     - charge customer
+//     - detail the car interior
+};
+
+struct AirPlane 
+{
+// 5 properties :
+//     - model name(std::string)
+//     - number of seats(int)
+//     - max speed(float)
+//     - fuel type(char)
+//     - manufacturer(std::string)
+// 3 things it can do:
+//     - take off
+//     - land
+//     - cruise
+};
+
+struct Robot 
+{
+// 5 properties :
+//     - model name(std::string)
+//     - weight(double)
+//     - battery type(char)
+//     - power consumption(float)
+//     - number of actuators(int)
+// 3 things it can do:
+//     - perform tasks
+//     - move
+//     - process sensor data
+};
+
+struct Amplifier
+{
+// 5 properties :
+//     - model name(std::string)
+//     - power in watts(float)
+//     - number of channels(int)
+//     - distortion(double)
+//     - gain(float)
+// 3 things it can do:
+//     - turn on
+//     - adjust distortion
+//     - blow the roof off
+};
+
+struct ArtificialIntelligence 
+{
+// 5 properties :
+//     - algorithm type(std::string)
+//     - learning rate(double)
+//     - number of layers in the neural network(int)
+//     - amount of training data(int)
+//     - accuracy on test data(float)
+// 3 things it can do:
+//     - predict outcomes
+//     - classify inputs
+//     - learn from past inputs
+};
+
+struct Airport 
+{
+// 5 properties:
+//     - name (std::string)
+//     - location (std::string)
+//     - number of runways (int)
+//     - number of terminals (int)
+//     - number of flights per day (int)
+// 3 things it can do:
+//     - receive airplanes
+//     - dispatch airplanes
+//     - manage air traffic
+};
+
+struct Factory 
+{
+// 5 proerties:
+//     - name (std::string)
+//     - location (std::string)
+//     - number of workers (int)
+//     - number of products produced per day (int)
+//     - operating cost per day (double)
+// 3 things it can do:
+//     - manufacture products
+//     - repair machinery
+//     - ship products
+};
+
+struct Concert 
+{
+// 5 properties:
+//     - name (std::string)
+//     - location (std::string)
+//     - number of attendees (int)
+//     - duration (float)
+//     - ticket price (double)
+// 3 things it can do:
+//     - start concert
+//     - end concert
+//     - entertain attendees
+};
+
+struct City
+{
+// 5 properties :
+//     - airport
+//     - factory
+//     - concert
+//     - data center
+//     - vehicle
+//3 things it can do:
+//     - entertainment
+//     - transportation
+//     - manage infrastructure
 };
 
 /*
