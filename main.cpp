@@ -715,10 +715,10 @@ Standard, described in the Readme.MD
           2) land
           3) cruise
     */
-    struct AirPlane // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct AirPlane // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -734,10 +734,10 @@ Standard, described in the Readme.MD
           2) move
           3) process sensor data
     */
-    struct Robot // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Robot // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -752,10 +752,10 @@ Standard, described in the Readme.MD
           2) adjust distortion
           3) blow the roof off
     */
-    struct Amplifier // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Amplifier // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -771,10 +771,10 @@ Standard, described in the Readme.MD
           2) classify inputs
           3) learn from past inputs
     */
-    struct ArtificialIntelligence // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct ArtificialIntelligence // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -790,10 +790,10 @@ Standard, described in the Readme.MD
           2) dispatch airplanes
           3) manage air traffic
     */
-    struct Airport // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Airport // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -809,10 +809,10 @@ Standard, described in the Readme.MD
           2) repair machinery
           3) ship products
     */
-    struct Factory // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Factory // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -828,10 +828,10 @@ Standard, described in the Readme.MD
           2) end concert
           3) entertain attendees
     */
-    struct Concert // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Concert // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
@@ -847,11 +847,11 @@ Standard, described in the Readme.MD
           2) store data
           3) cool servers
     */
-    struct DataCenter // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
+struct DataCenter // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
 
-    };
+};
     /*
 */
     /*
@@ -867,10 +867,10 @@ Standard, described in the Readme.MD
           2) stop engine
           3) transport passengers
     */
-    struct Vehicle // This is the empty struct, below my plain-English UDT.
-    {
-        // notice that no code is written inside the curly braces.
-    };
+struct Vehicle // This is the empty struct, below my plain-English UDT.
+{
+    // notice that no code is written inside the curly braces.
+};
     /*
 */
     /*
