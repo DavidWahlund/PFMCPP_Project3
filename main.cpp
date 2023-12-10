@@ -702,7 +702,191 @@ struct CarWash // This is the empty struct, below my plain-English UDT.
 Notice that the struct name 'CarWash' conforms with the Course Coding
 Standard, described in the Readme.MD
 */
+     /*
+      Thing 1: Airplane
+      5 properties :
+          1) model name(std::string)
+          2) number of seats(int)
+          3) max speed(float)
+          4) fuel type(char)
+          5) manufacturer(std::string)
+      3 things it can do:
+          1) take off
+          2) land
+          3) cruise
+    */
+    struct AirPlane // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 2: Robot
+      5 properties :
+          1) model name(std::string)
+          2) weight(double)
+          3) battery type(char)
+          4) power consumption(float)
+          5) number of actuators(int)
+      3 things it can do:
+          1) perform tasks
+          2) move
+          3) process sensor data
+    */
+    struct Robot // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 3: Amplifier
+      5 properties :
+          1) model name(std::string)
+          2) power in watts(float)
+          3) number of channels(int)
+          4) distortion(double) 5) gain(float)
+      3 things it can do:
+          1) turn on
+          2) adjust distortion
+          3) blow the roof off
+    */
+    struct Amplifier // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 4: Artificial Intelligence
+      5 properties :
+          1) algorithm type(std::string)
+          2) learning rate(double)
+          3) number of layers in the neural network(int)
+          4) amount of training data(int)
+          5) accuracy on test data(float)
+      3 things it can do:
+          1) predict outcomes
+          2) classify inputs
+          3) learn from past inputs
+    */
+    struct ArtificialIntelligence // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 5: Airport
+      5 properties:
+          1) name (std::string)
+          2) location (std::string)
+          3) number of runways (int)
+          4) number of terminals (int)
+          5) number of flights per day (int)
+      3 things it can do:
+          1) receive airplanes
+          2) dispatch airplanes
+          3) manage air traffic
+    */
+    struct Airport // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 6: Factory
+      5 properties:
+          1) name (std::string)
+          2) location (std::string)
+          3) number of workers (int)
+          4) number of products produced per day (int)
+          5) operating cost per day (double)
+      3 things it can do:
+          1) manufacture products
+          2) repair machinery
+          3) ship products
+    */
+    struct Factory // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 7: Concert
+      5 properties:
+          1) name (std::string)
+          2) location (std::string)
+          3) number of attendees (int)
+          4) duration (float)
+          5) ticket price (double)
+      3 things it can do:
+          1) start concert
+          2) end concert
+          3) entertain attendees
+    */
+    struct Concert // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 8: Data Center
+      5 properties:
+          1) name (std::string)
+          2) location (std::string)
+          3) number of servers (int)
+          4) power consumption per day (double)
+          5) data storage capacity (double)
+      3 things it can do:
+          1) process data
+          2) store data
+          3) cool servers
+    */
+    struct DataCenter // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
 
+    };
+    /*
+*/
+    /*
+      Thing 9: Vehicle
+      5 properties:
+          1) model name (std::string)
+          2) number of seats (int)
+          3) max speed (float)
+          4) fuel type (char)
+          5) manufacturer (std::string)
+      3 things it can do:
+          1) start engine
+          2) stop engine
+          3) transport passengers
+    */
+    struct Vehicle // This is the empty struct, below my plain-English UDT.
+    {
+        // notice that no code is written inside the curly braces.
+    };
+    /*
+*/
+    /*
+      Thing 10: City
+      5 properties:
+          1) airport
+          2) factory
+          3) concert
+          4) data center
+          5) vehicle
+      3 things it can do:
+          1) entertainment
+          2) transportation
+          3) manage infrastructure
+
+      */
 /*
 =================
 Part 1e - Step 2: Commit
