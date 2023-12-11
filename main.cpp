@@ -1088,20 +1088,194 @@ values
  */
 struct CarWash 
 {
-  // number of vacuum cleaners
-  int numVacuumCleaners = 3;
-  // number of eco-friendly cleaning supplies
-  int numEcoFriendlyCleaningSupplies = 20;
-  // stores the amount of water used per week.
-  float waterUsedPerWeek = 200.f;
-  // stores amount of profit made per week
-  float profitPerWeek = 495.95f;
-  // number of cars serviced per day
-  int numberOfCarsServiced = 10;
-  // 3 things it can do:
-  //     - wash and wax car
-  //     - charge customer
-  //     - detail the car interior
+    //number of vacuum cleaners                     
+    int numVacuumCleaners = 3; 
+    //number of eco-friendly cleaning supplies      
+    int numEcoFriendlyCleaningSupplies = 20;     
+    //stores the amount of water used per week.     
+    float waterUsedPerWeek = 200.f;            
+    //stores amount of profit made per week         
+    float profitPerWeek = 495.95f;               
+    //number of cars serviced per day               
+    int numberOfCarsServiced = 10;     
+    //3 things it can do:
+    //    - wash and wax car
+    //    - charge customer
+    //    - detail the car interior
+};
+
+struct AirPlane 
+{
+    //model name(std::string)
+    std::string modelName = "Boeing 747";
+    //    - number of seats(int)
+    int numSeats = 150;
+    //    - max speed(float)
+    float maxSpeed = 800.f;
+    //    - fuel type(char)
+    char fuelType = 'D';
+    //    - manufacturer(std::string)
+    std::string manufacturer = "Boeing";
+    //3 things it can do:
+    //    - take off
+    //    - land
+    //    - cruise
+};
+
+struct Robot 
+{
+    //    - model name(std::string)
+    std::string modelName = "T-800";
+    //    - weight(double)
+    double weight = 32.5;
+    //    - battery type(char)
+    char batteryType = 'L';
+    //    - power consumption(float)
+    float powerConsumption = 7.8f;
+    //    - number of actuators(int)
+    int numActuators = 6;
+    //3 things it can do:
+    //    - perform tasks
+    //    - move
+    //    - process sensor data
+};
+
+struct Amplifier
+{
+    //   - model name(std::string)
+    std::string modelName = "Amplifier";
+    //   - power in watts(float)
+    float powerInWatts = 5.f;
+    //   - number of channels(int)
+    int numChannels = 6;
+    //   - distortion(double)
+    double distortion = 55;
+    //   - gain(float)
+    float gain = 5.f;
+    //3 things it can do:
+    //   - turn on
+    //   - adjust distortion
+    //   - blow the roof off
+};
+
+struct ArtificialIntelligence 
+{
+    //    - algorithm type(std::string)
+    std::string algorithmType = "Genetic Algorithm";
+    //    - learning rate(double)
+    double learningRate = .1;
+    //    - number of layers in the neural network(int)
+    int numLayers = 3;
+    //    - amount of training data(int)
+    int numTrainingData = 10000;
+    //    - accuracy on test data(float)
+    float accuracyOnTestData = .9f;
+    //3 things it can do:
+    //    - predict outcomes
+    //    - classify inputs
+    //    - learn from past inputs
+};
+
+struct Airport 
+{
+    //    - name (std::string)
+    std::string name = "JFK";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - numer of runways (int)
+    int numRunways = 6;
+    //    - number of terminals (int)
+    int numTerminals = 4;
+    //    - number of flights per day (int)
+    int numFlightsPerDay = 5000;
+    //3 things it can do:
+    //    - receive airplanes
+    //    - dispatch airplanes
+    //    - manage air traffic
+};
+
+struct Factory 
+{
+    //    - name (std::string)
+    std::string name = "Factory";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of workers (int)
+    int numWorkers = 100;
+    //    - number of products produced per day (int)
+    int numProductsPerDay = 10000;
+    //    - operating cost per day (double)
+    double operatingCostPerDay = 10000;
+    //3 things it can do:
+    //    - manufacture products
+    //    - repair machinery
+    //    - ship products
+};
+struct Concert 
+{
+    //    - name (std::string)
+    std::string name = "Concert";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of attendees (int)
+    int numAttendees = 100000;
+    //    - duration (float)
+    float duration = 60.0f;
+    //    - ticket price (double)
+    double ticketPrice = 10.0;
+    //3 things it can do:
+    //    - start concert
+    //    - end concert
+    //    - entertain attendees
+};
+
+struct DataCenter
+{
+    //    - name (std::string)
+    std::string name = "Data Center";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of servers (int)
+    int numServers = 500;
+    //    - power consumption per day (double)
+    double powerConsumptionPerDay = 10.0;
+    //    - data storage capacity (double)
+    double dataStorageCapacity = 10.0;
+    //3 things it can do:
+    //    - process data
+    //    - store data
+    //    - cool servers
+};
+
+struct Vehicle
+{
+    //    model name (std::string)
+    std::string modelName = "Lada";
+    //    number of seats (int)
+    int numSeats = 5;
+    //    max speed (float)
+    float maxSpeed = 150.0f;
+    //    fuel type (char)
+    char fuelType = 'D';
+    //    manufacturer (std::string)
+    std::string manufacturer = "USSR";
+    //3 things it can do:
+    //    start engine
+    //    stop engine
+    //    transport passengers
+};
+
+struct City
+{
+    //    airport
+    //    factory
+    //    concert
+    //    data center
+    //    vehicle
+    //3 things it can do:
+    //    entertainment
+    //    transportation
+    //    manage infrastructure
 };
 
 
