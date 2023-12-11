@@ -1289,13 +1289,13 @@ Be sure to make the commit message meaningful.
 */
 } // end namespace Part1E_Step5
 
-namespace Part1E_Step7 {
+namespace Part1E_Step7 
+{
 /*
 =================
 Part 1e - Step 7: Assignment
 =================
-  - declare your member functions underneath each plain-English comment in
-your struct's body.
+  - declare your member functions underneath each plain-English comment in your struct's body.
   - add function parameters where it makes sense to have them.
   - if your functions return something other than 'void', add a comment
 explaining what is being returned.  see the example code below.
@@ -1318,11 +1318,52 @@ struct CarWash {
 
   // charge customer       //NOTE: function parameter is relevant to the work
   // that the function performs
-  float
-  chargeCustomer(float discountPercentage); // returns the total amount charged.
+  float  chargeCustomer(float discountPercentage); // returns the total amount charged.
 
   // detail the car interior
   void detailInterior();
+};
+
+struct AirPlane 
+{
+    //model name(std::string)
+    std::string modelName = "Boeing 747";
+    //    - number of seats(int)
+    int numSeats = 150;
+    //    - max speed(float)
+    float maxSpeed = 800.f;
+    //    - fuel type(char)
+    char fuelType = 'D';
+    //    - manufacturer(std::string)
+    std::string manufacturer = "Boeing";
+    //3 things it can do:
+    //    - take off
+    std::string takeOffTime(std::string t1); // returns the take off time in hh:mm:ss.
+    //    - land
+    std::string landTime(std::string t2); // returns the landing time in hours.
+    //    - cruise
+    void cruise();
+};
+
+struct Robot 
+{
+    //    - model name(std::string)
+    std::string modelName = "T-800";
+    //    - weight(double)
+    double weight = 32.5;
+    //    - battery type(char)
+    char batteryType = 'L';
+    //    - power consumption(float)
+    float powerConsumption = 7.8f;
+    //    - number of actuators(int)
+    int numActuators = 6;
+    //3 things it can do:
+    //    - perform tasks
+    std::string performTasks(); // returns the task that the robot is performing.
+    //    - move
+    void move();
+    //    - process sensor data
+    void processSensorData();
 };
 /*
 =================
@@ -1555,8 +1596,7 @@ struct CellPhone {
   Memory memory;   // a member variabledeclaration of an instance of UDT 6
   CPU cpu;         // a member variabledeclaration of an instance of UDT 7
   Radio radio;     // a member variabledeclaration of an instance of UDT 8
-  Applications
-      applications; // a member variabledeclaration of an instance of UDT 9
+  Applications applications; // a member variabledeclaration of an instance of UDT 9
 
   bool makeACall(std::string number); // returns true if the call connected
   bool
