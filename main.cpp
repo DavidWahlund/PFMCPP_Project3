@@ -1551,7 +1551,8 @@ Part 1e - Step 9: Assignment
 this project.
     - this nested class MUST be related to the class it is nested inside
 */
-struct CarWash {
+struct CarWash 
+    {
     // number of vacuum cleaners
     int numVacuumCleaners = 3;
     // number of eco-friendly cleaning supplies
@@ -1566,8 +1567,8 @@ struct CarWash {
     // this is the nested UDT:
     struct Car // Note that the nested type 'Car' is related to the 'CarWash'
     {
-    // 5 member variables with relevant data types.  the names are relevant to
-    // the UDT's purpose.
+        // 5 member variables with relevant data types.  the names are relevant to
+        // the UDT's purpose.
         bool isAPickupTruck = false;
         float gasMileage = 26.2f;
         int year = 1985;
@@ -1582,7 +1583,7 @@ struct CarWash {
         void fillTank(float costPerGallon, double fuelAmountInGallons = 2.0,
                         bool requiresDiesel = false);
         void breakDown(std::string failureType, bool requiresTow = false);
-        int getMilesTraveledAnnually(bool includeUberLyftTrips); // 3) returns the                 number of miles traveled
+        int getMilesTraveledAnnually(bool includeUberLyftTrips); // 3) returns the number of miles traveled
     }; // this is the end of the nested class
 
   // 3 things it can do:
@@ -1596,6 +1597,71 @@ struct CarWash {
 
   // detail the car interior
   void detailInterior();
+};
+
+struct Airport 
+{
+    //    - name (std::string)
+    std::string name = "JFK";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - numer of runways (int)
+    int numRunways = 6;
+    //    - number of terminals (int)
+    int numTerminals = 4;
+    //    - number of flights per day (int)
+    int numFlightsPerDay = 5000;
+    
+    // this is the nested UDT:
+    struct Flight
+    {
+        //5 member variables with relevant data types.  the names are relevant to the UDT's purpose.
+        std::string flightNumber = "A101";
+        std::string departureAirport = "JFK";
+        std::string arrivalAirport = "LAX";
+        float departureTime = 10.30f;
+        float arrivalTime = 12.30f;
+    };
+    //3 things it can do:
+    //    - receive airplanes
+    int receiveAirplanes(int planes); // returns the number of airplanes received.
+    //    - dispatch airplanes
+    int dispatchAirplanes(int planes); // returns the number of airplanes
+    //    - manage air traffic
+    void manageAirTraffic();
+};
+
+struct Factory 
+{
+    //    - name (std::string)
+    std::string name = "Factory";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of workers (int)
+    int numWorkers = 100;
+    //    - number of products produced per day (int)
+    int numProductsPerDay = 10000;
+    //    - operating cost per day (double)
+    double operatingCostPerDay = 10000;
+    
+    // this is the nested UDT:
+    struct Product
+    {
+        // 5 member variables with relevant data types.  the names are relevant to the UDT'
+        std::string name = "Product";
+        char productChatory = 'A';
+        int productNumber = 123;
+        float productWeight = 2.3f;
+        double productPrice = 500.5f;
+    };
+
+    //3 things it can do:
+    //    - manufacture products
+    int manufactureProducts(int amount); // returns the number of products manufactured.
+    //    - repair machinery
+    void repairMachinery();
+    //    - ship products
+    int shipProducts(int amount); // returns the number of products shipped.
 };
 /*
 =================
