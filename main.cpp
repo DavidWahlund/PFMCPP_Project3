@@ -1857,21 +1857,123 @@ struct Radio {};        // UDT 8
 struct Applications {}; // UDT 9
 
 // UDT 10, from Part 1c example
-struct CellPhone {
-  Display display; // a member variabledeclaration of an instance of UDT 5
-  Memory memory;   // a member variabledeclaration of an instance of UDT 6
-  CPU cpu;         // a member variabledeclaration of an instance of UDT 7
-  Radio radio;     // a member variabledeclaration of an instance of UDT 8
-  Applications applications; // a member variabledeclaration of an instance of UDT 9
+struct CellPhone 
+{
+    Display display; // a member variabledeclaration of an instance of UDT 5
+    Memory memory;   // a member variabledeclaration of an instance of UDT 6
+    CPU cpu;         // a member variabledeclaration of an instance of UDT 7
+    Radio radio;     // a member variabledeclaration of an instance of UDT 8
+    Applications applications; // a member variabledeclaration of an instance of UDT 9
 
-  bool makeACall(std::string number); // returns true if the call connected
-  bool
-  sendAText(std::string number,
-            std::string messageToSend); // returns true if the text was sent
-  int runApplication(
-      std::string applicationName); // returns how much memory (bytes) the
-                                    // application asked for
+    bool makeACall(std::string number); // returns true if the call connected
+    bool sendAText(std::string number, std::string messageToSend); // returns true if the text was sent
+    int runApplication(std::string applicationName); // returns how much memory (bytes) the application asked for
 };
+
+struct Airport 
+{
+    //    - name (std::string)
+    std::string name = "JFK";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - numer of runways (int)
+    int numRunways = 6;
+    //    - number of terminals (int)
+    int numTerminals = 4;
+    //    - number of flights per day (int)
+    int numFlightsPerDay = 5000;
+    //3 things it can do:
+    //    - receive airplanes
+    //    - dispatch airplanes
+    //    - manage air traffic
+};
+
+struct Factory 
+{
+    //    - name (std::string)
+    std::string name = "Factory";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of workers (int)
+    int numWorkers = 100;
+    //    - number of products produced per day (int)
+    int numProductsPerDay = 10000;
+    //    - operating cost per day (double)
+    double operatingCostPerDay = 10000;
+    //3 things it can do:
+    //    - manufacture products
+    //    - repair machinery
+    //    - ship products
+};
+struct Concert 
+{
+    //    - name (std::string)
+    std::string name = "Concert";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of attendees (int)
+    int numAttendees = 100000;
+    //    - duration (float)
+    float duration = 60.0f;
+    //    - ticket price (double)
+    double ticketPrice = 10.0;
+    //3 things it can do:
+    //    - start concert
+    //    - end concert
+    //    - entertain attendees
+};
+
+struct DataCenter
+{
+    //    - name (std::string)
+    std::string name = "Data Center";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of servers (int)
+    int numServers = 500;
+    //    - power consumption per day (double)
+    double powerConsumptionPerDay = 10.0;
+    //    - data storage capacity (double)
+    double dataStorageCapacity = 10.0;
+    //3 things it can do:
+    //    - process data
+    //    - store data
+    //    - transfer data
+};
+
+struct Vehicle
+{
+    //    model name (std::string)
+    std::string modelName = "Lada";
+    //    number of seats (int)
+    int numSeats = 5;
+    //    max speed (float)
+    float maxSpeed = 150.0f;
+    //    fuel type (char)
+    char fuelType = 'D';
+    //    manufacturer (std::string)
+    std::string manufacturer = "USSR";
+    //3 things it can do:
+    //    start engine
+    //    stop engine
+    //    transport passengers
+};
+
+struct City
+{
+    Airport airport;    //a member variabledeclaration of an instance of UDT 5
+    Factory factory;    //a member variabledeclaration of an instance of UDT 6
+    Concert concert;    //a member variabledeclaration of an instance of UDT 7
+    DataCenter dataCenter;    //a member variabledeclaration of an instance of UDT 8
+    Vehicle vehicle;    //a member variabledeclaration of an instance of UDT 9
+
+    bool addData(bool dataAdded, std::string typOfData); // returns true if the data was added to DataCenter. Returns what type of data.    
+    void registerVehicle(std::string registerNumber); // registers a vehicle to the city in format abc-123.
+    int orderProducts(int numProductsToOrder, char typeOfProduct); // orders products from Factory
+};
+
+
+
 /*
 =================
 Part 1e - Step 14: Commit
