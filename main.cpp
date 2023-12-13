@@ -1789,6 +1789,42 @@ struct CarWash {
 
   Keep this in mind when you define your UDTs in this project part.
   */
+
+struct Factory 
+{
+    //    - name (std::string)
+    std::string name = "Factory";
+    //    - location (std::string)
+    std::string location = "New York, NY";
+    //    - number of workers (int)
+    int numWorkers = 100;
+    //    - number of products produced per day (int)
+    int numProductsPerDay = 10000;
+    //    - operating cost per day (double)
+    double operatingCostPerDay = 10000;
+    
+    // this is the nested UDT:
+    struct Product
+    {
+        // 5 member variables with relevant data types.  the names are relevant to the UDT'
+        std::string name = "Product";
+        char productChatory = 'A';
+        int productNumber = 123;
+        float productWeight = 2.3f;
+        double productPrice = 500.5f;
+    };
+
+    //3 things it can do:
+    //    - manufacture products
+    void manufactureProducts(Product productManufactured); // returns the product manufactured.
+    //    - repair machinery
+    void repairMachinery();
+    //    - ship products
+    int shipProducts(int amount); // returns the number of products shipped.
+
+    // a member variable whose type is a UDT.
+    Product productBeingManufactured;
+};
 };
 /*
 =================
