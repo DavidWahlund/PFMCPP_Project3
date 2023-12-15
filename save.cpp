@@ -482,6 +482,12 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
+
+
+
+
+
+
 */
 
 /*
@@ -920,6 +926,146 @@ struct CarWash
     //    - detail the car interior
 };
 
+struct AirPlane 
+{
+    //5 properties :
+    //    - model name(std::string)
+    //    - number of seats(int)
+    //    - max speed(float)
+    //    - fuel type(char)
+    //    - manufacturer(std::string)
+    //3 things it can do:
+    //    - take off
+    //    - land
+    //    - cruise
+};
+
+struct Robot 
+{
+    //5 properties :
+    //    - model name(std::string)
+    //    - weight(double)
+    //    - battery type(char)
+    //    - power consumption(float)
+    //    - number of actuators(int)
+    //3 things it can do:
+    //    - perform tasks
+    //    - move
+    //    - process sensor data
+};
+
+struct Amplifier
+{
+    //5 properties :
+    //   - model name(std::string)
+    //   - power in watts(float)
+    //   - number of channels(int)
+    //   - distortion(double)
+    //   - gain(float)
+    //3 things it can do:
+    //   - turn on
+    //   - adjust distortion
+    //   - blow the roof off
+};
+
+struct ArtificialIntelligence 
+{
+    //5 propertis :
+    //    - algorithm type(std::string)
+    //    - learning rate(double)
+    //    - number of layers in the neural network(int)
+    //    - amount of training data(int)
+    //    - accuracy on test data(float)
+    //3 things it can do:
+    //    - predict outcomes
+    //    - classify inputs
+    //    - learn from past inputs
+};
+
+struct Airport 
+{
+    //5 properties:
+    //    - name (std::string)
+    //    - location (std::string)
+    //    - numer of runways (int)
+    //    - number of terminals (int)
+    //    - number of flights per day (int)
+    //3 things it can do:
+    //    - receive airplanes
+    //    - dispatch airplanes
+    //    - manage air traffic
+};
+
+struct Factory 
+{
+    //5 proerties:
+    //    - name (std::string)
+    //    - location (std::string)
+    //    - number of workers (int)
+    //    - number of products produced per day (int)
+    //    - operating cost per day (double)
+    //3 things it can do:
+    //    - manufacture products
+    //    - repair machinery
+    //    - ship products
+};
+
+struct Concert 
+{
+    //5 properties:
+    //    - name (std::string)
+    //    - location (std::string)
+    //    - number of attendees (int)
+    //    - duration (float)
+    //    - ticket price (double)
+    //3 things it can do:
+    //    - start concert
+    //    - end concert
+    //    - entertain attendees
+};
+
+struct DataCenter
+{
+    //5 properties:
+    //    - name (std::string)
+    //    - location (std::string)
+    //    - number of servers (int)
+    //    - power consumption per day (double)
+    //    - data storage capacity (double)
+    //3 things it can do:
+    //    - process data
+    //    - store data
+    //    - cool servers
+};
+
+struct Vehicle
+{
+    //5 properties:
+    //    model name (std::string)
+    //    number of seats (int)
+    //    max speed (float)
+    //    fuel type (char)
+    //    manufacturer (std::string)
+    //3 things it can do:
+    //    start engine
+    //    stop engine
+    //    transport passengers
+};
+
+struct City
+{
+    //5 properties :
+    //    airport
+    //    factory
+    //    concert
+    //    data center
+    //    vehicle
+    //3 things it can do:
+    //    entertainment
+    //    transportation
+    //    manage infrastructure
+};
+
 /*
 =================
 Part 1e - Step 4: Commit
@@ -942,21 +1088,22 @@ values
  */
 struct CarWash 
 {
-    //number of vacuum cleaners                     
-    int numVacuumCleaners = 3; 
-    //number of eco-friendly cleaning supplies      
-    int numEcoFriendlyCleaningSupplies = 20;     
-    //stores the amount of water used per week.     
-    float waterUsedPerWeek = 200.f;            
-    //stores amount of profit made per week         
-    float profitPerWeek = 495.95f;               
-    //number of cars serviced per day               
-    int numberOfCarsServiced = 10;     
-    //3 things it can do:
-    //    - wash and wax car
-    //    - charge customer
-    //    - detail the car interior
+  // number of vacuum cleaners
+  int numVacuumCleaners = 3;
+  // number of eco-friendly cleaning supplies
+  int numEcoFriendlyCleaningSupplies = 20;
+  // stores the amount of water used per week.
+  float waterUsedPerWeek = 200.f;
+  // stores amount of profit made per week
+  float profitPerWeek = 495.95f;
+  // number of cars serviced per day
+  int numberOfCarsServiced = 10;
+  // 3 things it can do:
+  //     - wash and wax car
+  //     - charge customer
+  //     - detail the car interior
 };
+
 
 /*
 
@@ -968,13 +1115,13 @@ Be sure to make the commit message meaningful.
 */
 } // end namespace Part1E_Step5
 
-namespace Part1E_Step7 
-{
+namespace Part1E_Step7 {
 /*
 =================
 Part 1e - Step 7: Assignment
 =================
-  - declare your member functions underneath each plain-English comment in your struct's body.
+  - declare your member functions underneath each plain-English comment in
+your struct's body.
   - add function parameters where it makes sense to have them.
   - if your functions return something other than 'void', add a comment
 explaining what is being returned.  see the example code below.
@@ -997,12 +1144,12 @@ struct CarWash {
 
   // charge customer       //NOTE: function parameter is relevant to the work
   // that the function performs
-  float  chargeCustomer(float discountPercentage); // returns the total amount charged.
+  float
+  chargeCustomer(float discountPercentage); // returns the total amount charged.
 
   // detail the car interior
   void detailInterior();
 };
-
 /*
 =================
 Part 1e - Step 8: Commit
@@ -1012,8 +1159,7 @@ Be sure to make the commit message meaningful.
 */
 } // end namespace Part1E_Step7
 
-namespace Part1E_Step19 
-{
+namespace Part1E_Step19 {
 /*
 =================
 Part 1e - Step 9: Assignment
@@ -1025,40 +1171,40 @@ Part 1e - Step 9: Assignment
 this project.
     - this nested class MUST be related to the class it is nested inside
 */
-struct CarWash 
-    {
-    // number of vacuum cleaners
-    int numVacuumCleaners = 3;
-    // number of eco-friendly cleaning supplies
-    int numEcoFriendlyCleaningSupplies = 20;
-    // stores the amount of water used per week.
-    float waterUsedPerWeek = 200.f;
-    // stores amount of profit made per week
-    float profitPerWeek = 495.95f;
-    // number of cars serviced per day
-    int numberOfCarsServiced = 10;
+struct CarWash {
+  // number of vacuum cleaners
+  int numVacuumCleaners = 3;
+  // number of eco-friendly cleaning supplies
+  int numEcoFriendlyCleaningSupplies = 20;
+  // stores the amount of water used per week.
+  float waterUsedPerWeek = 200.f;
+  // stores amount of profit made per week
+  float profitPerWeek = 495.95f;
+  // number of cars serviced per day
+  int numberOfCarsServiced = 10;
 
-    // this is the nested UDT:
-    struct Car // Note that the nested type 'Car' is related to the 'CarWash'
-    {
-        // 5 member variables with relevant data types.  the names are relevant to
-        // the UDT's purpose.
-        bool isAPickupTruck = false;
-        float gasMileage = 26.2f;
-        int year = 1985;
-        std::string manufacturer = "Toyota";
-        std::string model = "Corolla";
-        
-        // 3 member functions.
-        // they take multiple parameters. some parameters have default values.
-        // the parameter names are related to the work the function will perform.
-        // all function and variable names conform to the course coding standard,
-        // described in the Readme.MD file
-        void fillTank(float costPerGallon, double fuelAmountInGallons = 2.0,
-                        bool requiresDiesel = false);
-        void breakDown(std::string failureType, bool requiresTow = false);
-        int getMilesTraveledAnnually(bool includeUberLyftTrips); // 3) returns the number of miles traveled
-    }; // this is the end of the nested class
+  // this is the nested UDT:
+  struct Car // Note that the nested type 'Car' is related to the 'CarWash'
+  {
+    // 5 member variables with relevant data types.  the names are relevant to
+    // the UDT's purpose.
+    bool isAPickupTruck = false;
+    float gasMileage = 26.2f;
+    int year = 1985;
+    std::string manufacturer = "Toyota";
+    std::string model = "Corolla";
+
+    // 3 member functions.
+    // they take multiple parameters. some parameters have default values.
+    // the parameter names are related to the work the function will perform.
+    // all function and variable names conform to the course coding standard,
+    // described in the Readme.MD file
+    void fillTank(float costPerGallon, double fuelAmountInGallons = 2.0,
+                  bool requiresDiesel = false);
+    void breakDown(std::string failureType, bool requiresTow = false);
+    int getMilesTraveledAnnually(
+        bool includeUberLyftTrips); // 3) returns the number of miles traveled
+  };                                // this is the end of the nested class
 
   // 3 things it can do:
   // wash and wax car
@@ -1071,71 +1217,6 @@ struct CarWash
 
   // detail the car interior
   void detailInterior();
-};
-
-struct Airport 
-{
-    //    - name (std::string)
-    std::string name = "JFK";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - numer of runways (int)
-    int numRunways = 6;
-    //    - number of terminals (int)
-    int numTerminals = 4;
-    //    - number of flights per day (int)
-    int numFlightsPerDay = 5000;
-    
-    // this is the nested UDT:
-    struct Flight
-    {
-        //5 member variables with relevant data types.  the names are relevant to the UDT's purpose.
-        std::string flightNumber = "A101";
-        std::string departureAirport = "JFK";
-        std::string arrivalAirport = "LAX";
-        float departureTime = 10.30f;
-        float arrivalTime = 12.30f;
-    };
-    //3 things it can do:
-    //    - receive airplanes
-    int receiveAirplanes(int planes); // returns the number of airplanes received.
-    //    - dispatch airplanes
-    int dispatchAirplanes(int planes); // returns the number of airplanes
-    //    - manage air traffic
-    void manageAirTraffic();
-};
-
-struct Factory 
-{
-    //    - name (std::string)
-    std::string name = "Factory";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - number of workers (int)
-    int numWorkers = 100;
-    //    - number of products produced per day (int)
-    int numProductsPerDay = 10000;
-    //    - operating cost per day (double)
-    double operatingCostPerDay = 10000;
-    
-    // this is the nested UDT:
-    struct Product
-    {
-        // 5 member variables with relevant data types.  the names are relevant to the UDT'
-        std::string name = "Product";
-        char productChatory = 'A';
-        int productNumber = 123;
-        float productWeight = 2.3f;
-        double productPrice = 500.1;
-    };
-
-    //3 things it can do:
-    //    - manufacture products
-    int manufactureProducts(int amount); // returns the number of products manufactured.
-    //    - repair machinery
-    void repairMachinery();
-    //    - ship products
-    int shipProducts(int amount); // returns the number of products shipped.
 };
 /*
 =================
@@ -1263,42 +1344,6 @@ struct CarWash {
 
   Keep this in mind when you define your UDTs in this project part.
   */
-
-struct Factory 
-{
-    //    - name (std::string)
-    std::string name = "Factory";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - number of workers (int)
-    int numWorkers = 100;
-    //    - number of products produced per day (int)
-    int numProductsPerDay = 10000;
-    //    - operating cost per day (double)
-    double operatingCostPerDay = 10000;
-    
-    // this is the nested UDT:
-    struct Product
-    {
-        // 5 member variables with relevant data types.  the names are relevant to the UDT'
-        std::string name = "Product";
-        char productChatory = 'A';
-        int productNumber = 123;
-        float productWeight = 2.3f;
-        double productPrice = 500.5;
-    };
-
-    //3 things it can do:
-    //    - manufacture products
-    void manufactureProducts(Product productManufactured); // returns the product manufactured.
-    //    - repair machinery
-    void repairMachinery();
-    //    - ship products
-    int shipProducts(int amount); // returns the number of products shipped.
-
-    // a member variable whose type is a UDT.
-    Product productBeingManufactured;
-};
 };
 /*
 =================
@@ -1331,19 +1376,22 @@ struct Radio {};        // UDT 8
 struct Applications {}; // UDT 9
 
 // UDT 10, from Part 1c example
-struct CellPhone 
-{
-    Display display; // a member variabledeclaration of an instance of UDT 5
-    Memory memory;   // a member variabledeclaration of an instance of UDT 6
-    CPU cpu;         // a member variabledeclaration of an instance of UDT 7
-    Radio radio;     // a member variabledeclaration of an instance of UDT 8
-    Applications applications; // a member variabledeclaration of an instance of UDT 9
+struct CellPhone {
+  Display display; // a member variabledeclaration of an instance of UDT 5
+  Memory memory;   // a member variabledeclaration of an instance of UDT 6
+  CPU cpu;         // a member variabledeclaration of an instance of UDT 7
+  Radio radio;     // a member variabledeclaration of an instance of UDT 8
+  Applications
+      applications; // a member variabledeclaration of an instance of UDT 9
 
-    bool makeACall(std::string number); // returns true if the call connected
-    bool sendAText(std::string number, std::string messageToSend); // returns true if the text was sent
-    int runApplication(std::string applicationName); // returns how much memory (bytes) the application asked for
+  bool makeACall(std::string number); // returns true if the call connected
+  bool
+  sendAText(std::string number,
+            std::string messageToSend); // returns true if the text was sent
+  int runApplication(
+      std::string applicationName); // returns how much memory (bytes) the
+                                    // application asked for
 };
-
 /*
 =================
 Part 1e - Step 14: Commit
@@ -1400,208 +1448,5 @@ Part 1e - Step 19: Request a review
 /*
 paste your code below
 */
-struct AirPlane 
-{
-    //model name(std::string)
-    std::string modelName = "Boeing 747";
-    //    - number of seats(int)
-    int numSeats = 150;
-    //    - max speed(float)
-    float maxSpeed = 800.f;
-    //    - fuel type(char)
-    char fuelType = 'D';
-    //    - manufacturer(std::string)
-    std::string manufacturer = "Boeing";
-    //3 things it can do:
-    //    - take off
-    std::string takeOffTime(std::string takeOffTime); // returns the take off time in hh:mm:ss.
-    //    - land
-    std::string landTime(std::string landTime); // returns the landing time in hh:mm:ss.
-    //    - cruise
-    void cruise();
-};
-
-struct Robot 
-{
-    //    - model name(std::string)
-    std::string modelName = "R2D2";
-    //    - weight(double)
-    double weight = 32.5;
-    //    - battery type(char)
-    char batteryType = 'L';
-    //    - power consumption(float)
-    float powerConsumption = 7.8f;
-    //    - number of actuators(int)
-    int numActuators = 6;
-    //3 things it can do:
-    //    - perform tasks
-    std::string performTasks(std::string taskName); // returns the task that the robot is performing.
-    //    - move
-    int move(int x, int y); // returns the distance moved in x and y directions.
-    //    - process sensor data
-    void processSensorData();
-};
-
-struct Amplifier
-{
-    //   - model name(std::string)
-    std::string modelName = "Amplifier";
-    //   - power in watts(float)
-    float powerInWatts = 5.f;
-    //   - number of channels(int)
-    int numChannels = 6;
-    //   - distortion(double)
-    double distortion = 55;
-    //   - gain(float)
-    float gain = 5.f;
-    //3 things it can do:
-    //   - turn on
-    void turnOn();
-    //   - adjust distortion
-    int adjustDistortion(int distLevel); // returns the new distortion level.
-    //   - blow the roof off
-    void blowRoofOff();
-};
-
-struct ArtificialIntelligence 
-{
-    //    - algorithm type(std::string)
-    std::string algorithmType = "Genetic Algorithm";
-    //    - learning rate(double)
-    double learningRate = .1;
-    //    - number of layers in the neural network(int)
-    int numLayers = 3;
-    //    - amount of training data(int)
-    int numTrainingData = 10000;
-    //    - accuracy on test data(float)
-    float accuracyOnTestData = .9f;
-    //3 things it can do:
-    //    - predict outcomes
-    std::string predictOutcomes(std::string predictedOutcome); // returns the outcome predicted.
-    //    - classify inputs
-    void classifyInputs();
-    //    - learn from past inputs
-    void learnFromPastInputs();
-};
-
-struct Airport 
-{
-    //    - name (std::string)
-    std::string name = "JFK";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - numer of runways (int)
-    int numRunways = 6;
-    //    - number of terminals (int)
-    int numTerminals = 4;
-    //    - number of flights per day (int)
-    int numFlightsPerDay = 5000;
-    //3 things it can do:
-    //    - receive airplanes
-    int receiveAirplanes(int planes); // returns the number of airplanes received.
-    //    - dispatch airplanes
-    int dispatchAirplanes(int planes); // returns the number of airplanes
-    //    - manage air traffic
-    void manageAirTraffic();
-};
-
-struct Factory 
-{
-    //    - name (std::string)
-    std::string name = "Factory";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - number of workers (int)
-    int numProductsOrdered = 100;
-    //    - number of products produced per day (int)
-    int numProductsPerDay = 10000;
-    //    - operating cost per day (double)
-    double operatingCostPerDay = 10000;
-    //3 things it can do:
-    //    - manufacture products
-    int manufactureProducts(int amount, std::string typeName); // returns the number of products manufactured and name.
-    //    - repair machinery
-    void repairMachinery();
-    //    - ship products
-    int shipProducts(int amount); // returns the number of products shipped.
-};
-
-struct Concert 
-{
-    //    - name (std::string)
-    std::string name = "Concert";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - number of attendees (int)
-    int numAttendees = 100000;
-    //    - duration (float)
-    float duration = 60.0f;
-    //    - ticket price (double)
-    double ticketPrice = 10.0;
-    //3 things it can do:
-    //    - start concert
-    std::string startConcert(std::string startedConcertName); // returns the name of the concert.
-    //    - end concert
-    std::string endConcert(std::string endedConcertName); // returns the name of the concert.)
-    //    - entertain attendees
-    void entertainAttendees();
-};
-
-struct DataCenter
-{
-    //    - name (std::string)
-    std::string name = "Data Center";
-    //    - location (std::string)
-    std::string location = "New York, NY";
-    //    - number of servers (int)
-    int numServers = 500;
-    //    - power consumption per day (double)
-    double powerConsumptionPerDay = 10.0;
-    //    - data storage capacity (double)
-    double dataStorageCapacity = 10.0;
-    //3 things it can do:
-    //    - process data
-    void processData();
-    //    - store data
-    int storeData(int amount); // returns the number of data stored.
-    //    - transmit data
-    void transmitData();
-};
-
-struct Vehicle
-{
-    //    type (std::string)
-    std::string vehicleType = "Train";
-    //    number of seats (int)
-    int numSeats = 500;
-    //    max speed (float)
-    float maxSpeed = 200.0f;
-    //    fuel type (char)
-    char fuelType = 'E';
-    //    manufacturer (std::string)
-    std::string manufacturer = "Amtrak";
-    //3 things it can do:
-    //    start engine
-    void startEngine();
-    //    stop engine
-    void stopEngine();
-    //    transport passengers
-    int transportPassengers(int passengers); // returns the number of passengers transported.
-};
-
-struct City
-{
-    Airport airport;    //a member variabledeclaration of an instance of UDT 5
-    Factory factory;    //a member variabledeclaration of an instance of UDT 6
-    Concert concert;    //a member variabledeclaration of an instance of UDT 7
-    DataCenter dataCenter;    //a member variabledeclaration of an instance of UDT 8
-    Vehicle vehicle;    //a member variabledeclaration of an instance of UDT 9
-
-    int manufactureProduct(int numProductsToOrder, std::string typeOfProduct); // orders products from Factory and returns the number of products manufactured.
-    void transportProductFromFactory(Vehicle vehicleType, std::string timeSTamp, bool                                             transportDone); // transports products from Factory to City. Return timeStamp as true when done.   
-    void restockDataCenter(int numOfServers, double powerConsumptionPerDay, double                                     dataStorageCapacity);
-    
-
-};
 
 int main() { std::cout << "good to go!" << std::endl; }
