@@ -420,4 +420,15 @@ void City::transportProductFromFactory(Vehicle vehicleType, std::string timeStam
     transportDone = true;
 }
 
-int main() { std::cout << "good to go!" << std::endl; }
+void City::restockDataCenter(int numOfServers, double powerConsumptionPerDay, double dataStorage)
+{
+    std::cout << "Restocking Data Center with " << numOfServers << " servers, " << powerConsumptionPerDay << " MWh of power consumption and " << dataStorage << " GB of data storage" << std::endl;
+    dataCenter.numServers = numOfServers;
+    dataCenter.powerConsumptionPerDay = powerConsumptionPerDay;
+    dataCenter.dataStorageCapacity = dataStorage;
+}   
+
+int main() 
+{ 
+        std::cout << "good to go!" << std::endl; 
+}
