@@ -109,6 +109,54 @@ struct CarWash
  */
 
 
+struct Person 
+{
+    int age;
+    int height;
+    float hairLength;
+    float GPA;
+    unsigned int SATScore;
+    int distanceTraveled;
+
+    // the definition for the Type that leftFoot and rightFoot are instantiations of
+    struct Foot 
+    {
+        void stepForward() 
+        {
+            // Implementation of stepForward
+        }
+
+        int stepSize() 
+        {
+            // Implementation of stepSize
+            return 0;
+        }
+    
+    };
+
+    Foot leftFoot;
+    Foot rightFoot;
+    void run(int howFast, bool startWithLeftFoot);
+
+};
+
+void Person::run(int howFast, bool startWithLeftFoot)
+{ 
+    if (startWithLeftFoot)
+    {
+        leftFoot.stepForward();
+        rightFoot.stepForward();
+    }
+    else
+    {
+        rightFoot.stepForward();
+        leftFoot.stepForward();
+    }
+    distanceTraveled += (leftFoot.stepSize() + rightFoot.stepSize()) * howFast;
+
+}
+
+
 
 
 
@@ -136,206 +184,240 @@ paste your code below
 */
 struct AirPlane 
 {
-    //model name(std::string)
     std::string modelName = "Boeing 747";
-    //    - number of seats(int)
     int numSeats = 150;
-    //    - max speed(float)
     float maxSpeed = 800.f;
-    //    - fuel type(char)
     char fuelType = 'D';
-    //    - manufacturer(std::string)
+
     std::string manufacturer = "Boeing";
-    //3 things it can do:
-    //    - take off
-    std::string takeOffTime(std::string takeOffTime); // returns the take off time in hh:mm:ss.
-    //    - land
-    std::string landTime(std::string landTime); // returns the landing time in hh:mm:ss.
-    //    - cruise
+    std::string takeOffTime(std::string takeOffTime); 
+    std::string landTime(std::string landTime); 
     void cruise();
 };
+std::string AirPlane::takeOffTime(std::string theTakeOffTime)
+{
+    return theTakeOffTime;
+}
+std::string AirPlane::landTime(std::string theLandTime)
+{
+    return theLandTime;
+}
+void AirPlane::cruise()
+{
+}
 
 struct Robot 
 {
-    //    - model name(std::string)
     std::string modelName = "R2D2";
-    //    - weight(double)
     double weight = 32.5;
-    //    - battery type(char)
     char batteryType = 'L';
-    //    - power consumption(float)
     float powerConsumption = 7.8f;
-    //    - number of actuators(int)
     int numActuators = 6;
-    //3 things it can do:
-    //    - perform tasks
-    std::string performTasks(std::string taskName); // returns the task that the robot is performing.
-    //    - move
-    int move(int x, int y); // returns the distance moved in x and y directions.
-    //    - process sensor data
+
+    std::string performTasks(std::string taskName); 
+    int move(int x, int y); 
     void processSensorData();
 };
+std::string Robot::performTasks(std::string robotTaskName)
+{
+    return robotTaskName;
+}
+int Robot::move(int xPosition, int yPosition)
+{
+    return xPosition + yPosition;
+}
+void Robot::processSensorData()
+{
+}
 
 struct Amplifier
 {
-    //   - model name(std::string)
     std::string modelName = "Amplifier";
-    //   - power in watts(float)
     float powerInWatts = 5.f;
-    //   - number of channels(int)
     int numChannels = 6;
-    //   - distortion(double)
     double distortion = 55;
-    //   - gain(float)
     float gain = 5.f;
-    //3 things it can do:
-    //   - turn on
+
     void turnOn();
-    //   - adjust distortion
-    int adjustDistortion(int distLevel); // returns the new distortion level.
-    //   - blow the roof off
+    int adjustDistortion(int distLevel); 
     void blowRoofOff();
 };
+void Amplifier::turnOn()
+{
+}
+int Amplifier::adjustDistortion(int theDistLevel)
+{
+    return theDistLevel;
+}
+void Amplifier::blowRoofOff()
+{
+}
 
 struct ArtificialIntelligence 
 {
-    //    - algorithm type(std::string)
     std::string algorithmType = "Genetic Algorithm";
-    //    - learning rate(double)
     double learningRate = .1;
-    //    - number of layers in the neural network(int)
     int numLayers = 3;
-    //    - amount of training data(int)
     int numTrainingData = 10000;
-    //    - accuracy on test data(float)
     float accuracyOnTestData = .9f;
-    //3 things it can do:
-    //    - predict outcomes
-    std::string predictOutcomes(std::string predictedOutcome); // returns the outcome predicted.
-    //    - classify inputs
+
+    std::string predictOutcomes(std::string predictedOutcome); 
     void classifyInputs();
-    //    - learn from past inputs
     void learnFromPastInputs();
 };
+std::string ArtificialIntelligence::predictOutcomes(std::string doPredictedOutcome)
+{
+    return doPredictedOutcome;
+}
+void ArtificialIntelligence::classifyInputs()
+{
+}
+void ArtificialIntelligence::learnFromPastInputs()
+{
+}
 
 struct Airport 
 {
-    //    - name (std::string)
     std::string name = "JFK";
-    //    - location (std::string)
     std::string location = "New York, NY";
-    //    - numer of runways (int)
     int numRunways = 6;
-    //    - number of terminals (int)
     int numTerminals = 4;
-    //    - number of flights per day (int)
     int numFlightsPerDay = 5000;
-    //3 things it can do:
-    //    - receive airplanes
-    int receiveAirplanes(int planes); // returns the number of airplanes received.
-    //    - dispatch airplanes
-    int dispatchAirplanes(int planes); // returns the number of airplanes
-    //    - manage air traffic
+
+    int receiveAirplanes(int planes); 
+    int dispatchAirplanes(int planes); 
     void manageAirTraffic();
 };
+int Airport::receiveAirplanes(int nrOfPlanesReceiving)
+{
+    return nrOfPlanesReceiving;
+}
+int Airport::dispatchAirplanes(int nrOfPlanesDispatching)
+{
+    return nrOfPlanesDispatching;
+}
+void Airport::manageAirTraffic()
+{
+}
 
 struct Factory 
 {
-    //    - name (std::string)
     std::string name = "Factory";
-    //    - location (std::string)
     std::string location = "New York, NY";
-    //    - number of workers (int)
     int numProductsOrdered = 100;
-    //    - number of products produced per day (int)
     int numProductsPerDay = 10000;
-    //    - operating cost per day (double)
     double operatingCostPerDay = 10000;
-    //3 things it can do:
-    //    - manufacture products
-    int manufactureProducts(int amount, std::string typeName); // returns the number of products manufactured and name.
-    //    - repair machinery
+
+    int manufactureProducts(int amount, std::string typeName); 
     void repairMachinery();
-    //    - ship products
-    int shipProducts(int amount); // returns the number of products shipped.
+    int shipProducts(int amount); 
 };
+int Factory::manufactureProducts(int amountOfProducts, std::string productTypeName)
+{
+    std::cout << "Manufacturing " << amountOfProducts << " of " << productTypeName << std::endl;
+    return amountOfProducts;
+}
+void Factory::repairMachinery()
+{
+}
+int Factory::shipProducts(int amountOfProductsShipped)
+{
+    return amountOfProductsShipped;
+}
 
 struct Concert 
 {
-    //    - name (std::string)
     std::string name = "Concert";
-    //    - location (std::string)
     std::string location = "New York, NY";
-    //    - number of attendees (int)
     int numAttendees = 100000;
-    //    - duration (float)
     float duration = 60.0f;
-    //    - ticket price (double)
     double ticketPrice = 10.0;
-    //3 things it can do:
-    //    - start concert
-    std::string startConcert(std::string startedConcertName); // returns the name of the concert.
-    //    - end concert
-    std::string endConcert(std::string endedConcertName); // returns the name of the concert.)
-    //    - entertain attendees
+
+    std::string startConcert(std::string startedConcertName); 
+    std::string endConcert(std::string endedConcertName); 
     void entertainAttendees();
 };
+std::string Concert::startConcert(std::string startConcertName)
+{
+    return startConcertName;
+}
+std::string Concert::endConcert(std::string endOfConcertName)
+{
+    return endOfConcertName;
+}
+void Concert::entertainAttendees()
+{
+}
 
 struct DataCenter
 {
-    //    - name (std::string)
     std::string name = "Data Center";
-    //    - location (std::string)
     std::string location = "New York, NY";
-    //    - number of servers (int)
     int numServers = 500;
-    //    - power consumption per day (double)
     double powerConsumptionPerDay = 10.0;
-    //    - data storage capacity (double)
     double dataStorageCapacity = 10.0;
-    //3 things it can do:
-    //    - process data
+
     void processData();
-    //    - store data
-    int storeData(int amount); // returns the number of data stored.
-    //    - transmit data
+    int storeData(int amount); 
     void transmitData();
 };
+void DataCenter::processData()
+{
+}
+int DataCenter::storeData(int amountOfDataStored)
+{
+    return amountOfDataStored;
+}
+void DataCenter::transmitData()
+{
+}
 
 struct Vehicle
 {
-    //    type (std::string)
     std::string vehicleType = "Train";
-    //    number of seats (int)
     int numSeats = 500;
-    //    max speed (float)
     float maxSpeed = 200.0f;
-    //    fuel type (char)
     char fuelType = 'E';
-    //    manufacturer (std::string)
+
     std::string manufacturer = "Amtrak";
-    //3 things it can do:
-    //    start engine
     void startEngine();
-    //    stop engine
     void stopEngine();
-    //    transport passengers
-    int transportPassengers(int passengers); // returns the number of passengers transported.
+    int transportPassengers(int passengers); 
 };
+void Vehicle::startEngine()
+{
+}
+void Vehicle::stopEngine()
+{
+}
+int Vehicle::transportPassengers(int nrOfPassengers)
+{
+    return nrOfPassengers;
+}
 
 struct City
 {
-    Airport airport;    //a member variabledeclaration of an instance of UDT 5
-    Factory factory;    //a member variabledeclaration of an instance of UDT 6
-    Concert concert;    //a member variabledeclaration of an instance of UDT 7
-    DataCenter dataCenter;    //a member variabledeclaration of an instance of UDT 8
-    Vehicle vehicle;    //a member variabledeclaration of an instance of UDT 9
+    Airport airport;
+    Factory factory;
+    Concert concert;
+    DataCenter dataCenter;
+    Vehicle vehicle;
 
-    int manufactureProduct(int numProductsToOrder, std::string typeOfProduct); // orders products from Factory and returns the number of products manufactured.
-    void transportProductFromFactory(Vehicle vehicleType, std::string timeSTamp, bool                                             transportDone); // transports products from Factory to City. Return timeStamp as true when done.   
-    void restockDataCenter(int numOfServers, double powerConsumptionPerDay, double                                     dataStorageCapacity);
-    
-
+    int manufactureProduct(int numProductsToOrder, std::string typeOfProduct);
+    void transportProductFromFactory(Vehicle vehicleType, std::string timeStamp, bool transportDone);
+    void restockDataCenter(int numOfServers, double powerConsumptionPerDay, double dataStorageCapacity);
 };
+
+int City::manufactureProduct(int theNumProductsToOrder, std::string nameTypeOfProduct)
+{
+    std::cout << "City ordered " << theNumProductsToOrder << " of " << nameTypeOfProduct << std::endl;
+    return factory.manufactureProducts(theNumProductsToOrder, nameTypeOfProduct);
+}
+
+void City::transportProductFromFactory(Vehicle vehicleType, std::string timeStamp, bool transportDone)
+{
+    std::cout << "Transporting products using " << vehicleType.vehicleType << " at " << timeStamp << std::endl;
+    transportDone = true;
+}
 
 int main() { std::cout << "good to go!" << std::endl; }
